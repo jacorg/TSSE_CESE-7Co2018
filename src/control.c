@@ -33,14 +33,9 @@
 #include "control.h"
 
 
-
-
 //Sistema de control para controlar temperatura en un medio cerrado. El sensor de temperatura genera dato valido entre -40 a 150 C.
 // El sistema de calentamiento se hace en base a una serie de heater que trabajan en escalera.
 // EL sistema de enfrimiento se hace en base a celdas peltiers trabajando tambien en modo escalonado.
-
-
-
 
 
 void heaterSystem(heater_t *heater,float temp){
@@ -85,28 +80,6 @@ void coolingSystem(cooling_t *cooling,float  temp){
 		cooling->cooling_1=OFF;
 		cooling->cooling_2=OFF;
 	}
-
-/*
-	if (temp>H_LEVEL_0){
-		cooling->cooling_0=ON;
-		
-	}
-	else if (temp>H_LEVEL_1){
-		cooling->cooling_0=ON;
-		cooling->cooling_1=ON;
-		
-	}
-	else if (temp>H_LEVEL_2){
-		cooling->cooling_0=ON;
-		cooling->cooling_1=ON;
-		cooling->cooling_2=ON;
-	}
-	else{
-		cooling->cooling_0=OFF;
-		cooling->cooling_1=OFF;
-		cooling->cooling_2=OFF;
-	}
-*/
 	return;
 }
 

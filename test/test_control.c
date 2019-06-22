@@ -186,27 +186,3 @@ void test_mayor_H_LEVEL_2 (void){
 	TEST_ASSERT_EQUAL(ON,cooling.cooling_2);
 }
 
-
-
-
-
-
-
-
-/*
-void test_superando_H_LEVEL_1 (void){
-}
-
-void test_superando_H_LEVEL_2 (void){
-}
-
-
-void test_superando_H_LEVEL_0 (void){
-}
-
-void test_menor_L_LEVEL_1 (void){
-}
-
-void test_menor_L_LEVEL_2 (void){
-}
-*/
